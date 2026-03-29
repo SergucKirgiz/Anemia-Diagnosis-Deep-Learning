@@ -1,3 +1,4 @@
+(app_screenshot.png)
 # Anemia Diagnosis with Neural Networks
 This project uses a Deep Learning model to predict anemia types based on Complete Blood Count (CBC) data.
 
