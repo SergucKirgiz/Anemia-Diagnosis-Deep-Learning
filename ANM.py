@@ -89,3 +89,6 @@ print(f"Diagnosis Result: {final_diagnosis[0]}")
 model.save("models/anemia_model.keras")
 joblib.dump(scaler, "models/anemia_scaler.pkl")
 print("Model and Scaler have been saved to the 'models/' folder.")
+
+joblib.dump(label_encoder, 'models/label_encoder.pkl')
+print("Label Encoder saved!")
