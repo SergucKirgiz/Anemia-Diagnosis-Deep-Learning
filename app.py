@@ -23,22 +23,22 @@ st.subheader("Patient Blood Values")
 col1 , col2 = st.columns(2)
 
 with col1:
-    wbc = st.number_input("WBC", value=9.4)
-    lymp = st.number_input("LYMp (%)", value=34.0)
-    neutp = st.number_input("NEUTp (%)", value=51.0)
-    lymn = st.number_input("LYMn (#)", value=4.1)
-    neutn = st.number_input("NEUTn (#)", value=5.0)
-    rbc = st.number_input("RBC", value=2.62)
-    hgb = st.number_input("HGB", value=7.1)
+    wbc = st.number_input("WBC (White Blood Cell Count)", value=9.4)
+    lymp = st.number_input("LYMp (Lymphocyte Percentage %)", value=34.0)
+    neutp = st.number_input("NEUTp (Neutrophil Percentage %)", value=51.0)
+    lymn = st.number_input("LYMn (Lymphocyte Count #)", value=4.1)
+    neutn = st.number_input("NEUTn (Neutrophil Count #)", value=5.0)
+    rbc = st.number_input("RBC (Red Blood Cell Count)", value=2.62)
+    hgb = st.number_input("HGB (Hemoglobin)", value=7.1)
 
 with col2:
-    hct = st.number_input("HCT", value=27.3)
-    mcv = st.number_input("MCV", value=89.2)
-    mch = st.number_input("MCH", value=25.1)
-    mchc = st.number_input("MCHC", value=31.1)
-    plt = st.number_input("PLT", value=187.1)
-    pdw = st.number_input("PDW", value=12.7)
-    pct = st.number_input("PCT", value=0.16)
+    hct = st.number_input("HCT (Hematocrit)", value=27.3)
+    mcv = st.number_input("MCV (Mean Corpuscular Volume)", value=89.2)
+    mch = st.number_input("MCH (Mean Corpuscular Hemoglobin)", value=25.1)
+    mchc = st.number_input("MCHC (Mean Corpuscular Hemoglobin Concentration)", value=31.1)
+    plt = st.number_input("PLT (Platelet Count)", value=187.1)
+    pdw = st.number_input("PDW (Platelet Distribution Width)", value=12.7)
+    pct = st.number_input("PCT (Plateletcrit)", value=0.16)
 
 if st.button("Predict Diagnosis",type="primary"):
     column_names = [
